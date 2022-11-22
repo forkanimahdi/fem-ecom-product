@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" >
+    <title>E-commerce product page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon-cart.svg">
+
+</head>
+<body id="body">
+    <div class="mobilepictures">
+        <img id="mobilepic1" src="images/image-product-1.jpg" alt="">
+        <img id="mobilepic2" src="images/image-product-2.jpg" alt="">
+        <img id="mobilepic3" src="images/image-product-3.jpg" alt="">
+        <img id="mobilepic4" src="images/image-product-4.jpg" alt="">
+      
+</div>
+    
+
+<div id="checkoutcart">
+    <h3 class="checkoutheader">Cart</h3>
+    <div class="empty">Your cart is empty .</div>
+    <div id="itembought">
+        <img class="checkoutthumbnail" src="images/image-product-1-thumbnail.jpg" alt="">
+        <img class="delete" src="images/icon-delete.svg" alt="">
+        <h5 class="checkouttittle">Fall Limited Edition Sneakers</h5>
+        <div class="bill">$125.00 x <span id="checkoutquantity"></span> <span id="checkoutbill"></span></div>
+        <button class="pay">Checkout</button>
+    </div>
+</div>
+</header>
+
+<div class="imagecontainer">
+<img id="bigpic1" src="images/image-product-1.jpg" alt="">
+<img id="bigpic2" src="images/image-product-2.jpg" alt="">
+<img id="bigpic3" src="images/image-product-3.jpg" alt="">
+<img id="bigpic4" src="images/image-product-4.jpg" alt="">
+
+<div class="thumbnails">
+    <img id="thumbnail1" class="thumbnail"  src="images/image-product-1-thumbnail.jpg" alt="">
+    <img id="thumbnail2" class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="">
+    <img id="thumbnail3" class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="">
+    <img id="thumbnail4" class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="">
+</div>
+</div>
+
+
+<div class="productinfo">
+<h4> Sneaker Company</h4>
+<h1 class="adtittle">  Fall Limited Edition Sneakers</h1>
+<p class="adparagraph">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+    durable rubber outer sole, they’ll withstand everything the weather can offer.
+  </p>
+  <h1 class="price">$125.00</h1>
+  <p class="reduce">50%</p> 
+  <h2 class="oldprice"><s> $250.00</s></h2>
+<div class="quantity">
+    <span id="quantity">0</span>
+<img id="plus" src="images/icon-plus.svg" alt="plus">
+<img id="minus" src="images/icon-minus.svg" alt="minus">
+</div>
+<button class="addtocart"><img class="cart" src="images/icon-cart.svg" alt="cart">  Add to cart</button>
+  
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.instagram.com/forkanimahdi" target="_blank">Forkani Mehdi</a>.
+  </div>
+
+<div id="openedimage">
+
+    <div class="lightbox"></div>
+        <div class="imagecontainer2">
+            <img id="bigpic12" src="images/image-product-1.jpg" alt="">
+            <img id="bigpic22" src="images/image-product-2.jpg" alt="">
+            <img id="bigpic32" src="images/image-product-3.jpg" alt="">
+            <img id="bigpic42" src="images/image-product-4.jpg" alt="">
+        </div>
+       
+        <img id="next" src="images/icon-next.svg" alt="">
+    <img id="previous" src="images/icon-previous.svg" alt="">
+    <button class="close" onclick="closelightbox()">X</button>
+    <div class="thumbnails2">
+                <img id="thumbnail12" class="thumbnail2"  src="images/image-product-1-thumbnail.jpg" alt="">
+                <img id="thumbnail22" class="thumbnail2" src="images/image-product-2-thumbnail.jpg" alt="">
+                <img id="thumbnail32" class="thumbnail2" src="images/image-product-3-thumbnail.jpg" alt="">
+                <img id="thumbnail42" class="thumbnail2" src="images/image-product-4-thumbnail.jpg" alt="">
+            </div>
+           
+    </div>
+    <!-- mobile version -->
+  
+
+<img id="mobilenext" src="images/icon-next.svg" alt="">
+<img id="mobileprevious" src="images/icon-previous.svg" alt="">  
+</div>
+<header>
+        <img id="basket" src="images/icon-cart.svg" alt="Basket">
+        <span id="added">0</span>
+         <input type="checkbox" id="cartcheckbox" onclick="isCheckedcart()">
+         <img class="userPic" src="images/image-avatar.png" alt="User picture">
+<div class="mobilelightbox"></div>
+    <nav>
+        <div class="menu">
+         <a href="">Collections</a>
+         <a href="">Men</a>
+         <a href="">Women</a>
+         <a href="">About</a>
+         <a href="">Contact</a>
+        </div>
+    </nav>
+    <img class="logo" src="images/logo.svg" alt="Logo">
+
+    <div class="mobile">
+        <img class="closemenu" src="images/icon-close.svg" alt="">
+             <img class="mobilemenu" src="images/icon-menu.svg" alt="">
+         <input type="checkbox" id="menucheckbox" onclick="isCheckedmenu()">
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
