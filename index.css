@@ -388,6 +388,10 @@ h4{
 .pay:hover{
     background-color: hsl(26, 87%, 64%);
 }
+.pay a{
+ color: white;
+ text-decoration:none
+}
 .empty{
     font-weight: bold;
     font-family: sans-serif;
